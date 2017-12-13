@@ -12,7 +12,7 @@ I've been wondering how to deal with more than one Xiaomi Yi Dash Cam within sin
 1. Setup your cameras to have separated SSIDs (and preferrable — passwords),
 2. Make sure your Wifi cards are working under your OS,
 3. Connect cards to the cameras,
-4. Setup NICs to have static IPs:
+4. Setup NICs to have static IPs (append to ``/etc/dhcpcd.conf``):
 ````
 interface wlan0
 static ip_address=192.168.1.11/24
